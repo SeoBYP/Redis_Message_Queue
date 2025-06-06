@@ -73,34 +73,31 @@ sequenceDiagram
 
 ```mermaid
 flowchart LR
-  subgraph ProducerApp[Producer App]
-    P[XADD mq:stream * message "<payload>"]
+  subgraph ProducerApp
+    P["XADD mq:stream * message 'payload'"]
   end
-  subgraph RedisServer[Redis Server]
-    Stream[StreamKey: "mq:stream"]
-    CG[Consumer Group: "mq-group"]
-    PEL[PENDING LIST (PEL)]
-    LastID[LastDeliveredID]
+  subgraph RedisServer
+    Stream["StreamKey: mq:stream"]
+    CG["Consumer Group: mq-group"]
+    PEL["PENDING LIST (PEL)"]
+    LastID["LastDeliveredID"]
   end
-  subgraph ConsumerA[Consumer A]
-    A_Read[XREADGROUP GROUP mq-group A COUNT 1 BLOCK 5000 STREAMS mq:stream >]
-    A_ACK[XACK mq:stream mq-group <messageId>]
+  subgraph ConsumerA
+    A_Read["XREADGROUP GROUP mq-group A ..."]
+    A_ACK["XACK mq:stream mq-group messageId"]
   end
-  subgraph ConsumerB[Consumer B]
-    B_Read[XREADGROUP GROUP mq-group B COUNT 1 BLOCK 5000 STREAMS mq:stream >]
+  subgraph ConsumerB
+    B_Read["XREADGROUP GROUP mq-group B ..."]
   end
-
-  P -->|메시지 추가| Stream
-  Stream -->|ID 생성| RedisServer
-
-  RedisServer -->|배분| A_Read
-  A_Read -->|PEL 등록| PEL & LastID
+  P -->|"메시지 추가"| Stream
+  Stream -->|"ID 생성"| RedisServer
+  RedisServer -->|"배분"| A_Read
+  A_Read -->|"PEL 등록"| PEL
+  A_Read -->|"LastID 업데이트"| LastID
   A_Read --> ConsumerA
-
-  ConsumerA -->|ACK| A_ACK
-  A_ACK -->|PEL 제거| PEL
-
-  RedisServer -.->|대기| B_Read
+  ConsumerA -->|"ACK"| A_ACK
+  A_ACK -->|"PEL 제거"| PEL
+  RedisServer -.->|"대기"| B_Read
 ```
 
 > 전체 구현 및 흐름 설명은 `Redis Stream Detailed.md` 문서 참고
