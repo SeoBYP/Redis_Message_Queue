@@ -46,9 +46,6 @@ sequenceDiagram
         end
     end
 ```
-
-> 전체 구현 내용은 `Redis List Queue.md` 문서 참고
-
 ---
 
 ## 2. Redis Stream 기반 구현
@@ -99,9 +96,6 @@ flowchart LR
   A_ACK -->|"PEL 제거"| PEL
   RedisServer -.->|"대기"| B_Read
 ```
-
-> 전체 구현 및 흐름 설명은 `Redis Stream Detailed.md` 문서 참고
-
 ---
 
 ## 실행 환경 및 설정
