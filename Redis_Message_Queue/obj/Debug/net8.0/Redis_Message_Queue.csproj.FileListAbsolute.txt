@@ -1,0 +1,13 @@
+C:\Users\user\RiderProjects\Redis_Message_Queue\Redis_Message_Queue\bin\Debug\net8.0\Redis_Message_Queue.deps.json
+C:\Users\user\RiderProjects\Redis_Message_Queue\Redis_Message_Queue\bin\Debug\net8.0\Redis_Message_Queue.dll
+C:\Users\user\RiderProjects\Redis_Message_Queue\Redis_Message_Queue\bin\Debug\net8.0\Redis_Message_Queue.pdb
+C:\Users\user\RiderProjects\Redis_Message_Queue\Redis_Message_Queue\obj\Debug\net8.0\Redis_Message_Queue.csproj.AssemblyReference.cache
+C:\Users\user\RiderProjects\Redis_Message_Queue\Redis_Message_Queue\obj\Debug\net8.0\Redis_Message_Queue.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\RiderProjects\Redis_Message_Queue\Redis_Message_Queue\obj\Debug\net8.0\Redis_Message_Queue.AssemblyInfoInputs.cache
+C:\Users\user\RiderProjects\Redis_Message_Queue\Redis_Message_Queue\obj\Debug\net8.0\Redis_Message_Queue.AssemblyInfo.cs
+C:\Users\user\RiderProjects\Redis_Message_Queue\Redis_Message_Queue\obj\Debug\net8.0\Redis_Message_Queue.csproj.CoreCompileInputs.cache
+C:\Users\user\RiderProjects\Redis_Message_Queue\Redis_Message_Queue\obj\Debug\net8.0\Redis_Message_Queue.sourcelink.json
+C:\Users\user\RiderProjects\Redis_Message_Queue\Redis_Message_Queue\obj\Debug\net8.0\Redis_Message_Queue.dll
+C:\Users\user\RiderProjects\Redis_Message_Queue\Redis_Message_Queue\obj\Debug\net8.0\refint\Redis_Message_Queue.dll
+C:\Users\user\RiderProjects\Redis_Message_Queue\Redis_Message_Queue\obj\Debug\net8.0\Redis_Message_Queue.pdb
+C:\Users\user\RiderProjects\Redis_Message_Queue\Redis_Message_Queue\obj\Debug\net8.0\ref\Redis_Message_Queue.dll

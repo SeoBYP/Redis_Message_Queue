@@ -4,9 +4,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Producer", "Producer\Produc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consumer", "Consumer\Consumer.csproj", "{D2D5D079-0893-4317-9D0E-1E3ADB0F09FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisStreamProducer", "RedisStreamProducer\RedisStreamProducer.csproj", "{CFE5096B-F9F1-4826-9DD8-366F9046BEFF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisStreamConsumer", "RedisStreamConsumer\RedisStreamConsumer.csproj", "{047973A8-8513-4317-86BF-5B3A4101D319}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Redis_Message_Queue", "Redis_Message_Queue\Redis_Message_Queue.csproj", "{58952657-0C63-41C1-B3E0-88C790DD5F6E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,13 +20,9 @@ Global
 		{D2D5D079-0893-4317-9D0E-1E3ADB0F09FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2D5D079-0893-4317-9D0E-1E3ADB0F09FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2D5D079-0893-4317-9D0E-1E3ADB0F09FB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CFE5096B-F9F1-4826-9DD8-366F9046BEFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CFE5096B-F9F1-4826-9DD8-366F9046BEFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CFE5096B-F9F1-4826-9DD8-366F9046BEFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CFE5096B-F9F1-4826-9DD8-366F9046BEFF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{047973A8-8513-4317-86BF-5B3A4101D319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{047973A8-8513-4317-86BF-5B3A4101D319}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{047973A8-8513-4317-86BF-5B3A4101D319}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{047973A8-8513-4317-86BF-5B3A4101D319}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58952657-0C63-41C1-B3E0-88C790DD5F6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58952657-0C63-41C1-B3E0-88C790DD5F6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58952657-0C63-41C1-B3E0-88C790DD5F6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58952657-0C63-41C1-B3E0-88C790DD5F6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

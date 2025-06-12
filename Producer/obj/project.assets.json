@@ -34,7 +34,7 @@
           }
         }
       },
-      "StackExchange.Redis/2.8.37": {
+      "StackExchange.Redis/2.8.41": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
@@ -62,6 +62,19 @@
           "lib/netcoreapp3.0/System.IO.Pipelines.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Redis_Message_Queue/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "StackExchange.Redis": "2.8.41"
+        },
+        "compile": {
+          "bin/placeholder/Redis_Message_Queue.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Redis_Message_Queue.dll": {}
         }
       }
     }
@@ -142,10 +155,10 @@
         "pipelines.sockets.unofficial.nuspec"
       ]
     },
-    "StackExchange.Redis/2.8.37": {
-      "sha512": "ULscDAQR+z132IsLczXcM/PG+EyfQMNxhvqjG1Xd/h/J1O9prsUU4pG9d95xv77lUF8v3X6owpf/11Uh0uvZAQ==",
+    "StackExchange.Redis/2.8.41": {
+      "sha512": "EgtQzlucry9V2Gces1K19Xi8Sz/8DfoZlGQEmL/hSM/SXO/ucDS5RPmLzcmT489ZNGFbj9CGhlpscPLOXtYWwA==",
       "type": "package",
-      "path": "stackexchange.redis/2.8.37",
+      "path": "stackexchange.redis/2.8.41",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -162,7 +175,7 @@
         "lib/netcoreapp3.1/StackExchange.Redis.xml",
         "lib/netstandard2.0/StackExchange.Redis.dll",
         "lib/netstandard2.0/StackExchange.Redis.xml",
-        "stackexchange.redis.2.8.37.nupkg.sha512",
+        "stackexchange.redis.2.8.41.nupkg.sha512",
         "stackexchange.redis.nuspec"
       ]
     },
@@ -191,38 +204,55 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Redis_Message_Queue/1.0.0": {
+      "type": "project",
+      "path": "../Redis_Message_Queue/Redis_Message_Queue.csproj",
+      "msbuildProject": "../Redis_Message_Queue/Redis_Message_Queue.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "StackExchange.Redis >= 2.8.37"
+      "Redis_Message_Queue >= 1.0.0",
+      "StackExchange.Redis >= 2.8.41"
     ]
   },
   "packageFolders": {
-    "/Users/seobyeongpil/.nuget/packages/": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/seobyeongpil/GitHub/Redis_Message_Queue/Producer/Producer.csproj",
+      "projectUniqueName": "C:\\Users\\user\\RiderProjects\\Redis_Message_Queue\\Producer\\Producer.csproj",
       "projectName": "Producer",
-      "projectPath": "/Users/seobyeongpil/GitHub/Redis_Message_Queue/Producer/Producer.csproj",
-      "packagesPath": "/Users/seobyeongpil/.nuget/packages/",
-      "outputPath": "/Users/seobyeongpil/GitHub/Redis_Message_Queue/Producer/obj/",
+      "projectPath": "C:\\Users\\user\\RiderProjects\\Redis_Message_Queue\\Producer\\Producer.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\RiderProjects\\Redis_Message_Queue\\Producer\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/seobyeongpil/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\user\\RiderProjects\\Redis_Message_Queue\\Redis_Message_Queue\\Redis_Message_Queue.csproj": {
+              "projectPath": "C:\\Users\\user\\RiderProjects\\Redis_Message_Queue\\Redis_Message_Queue\\Redis_Message_Queue.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -234,7 +264,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -242,7 +273,7 @@
         "dependencies": {
           "StackExchange.Redis": {
             "target": "Package",
-            "version": "[2.8.37, )"
+            "version": "[2.8.41, )"
           }
         },
         "imports": [
@@ -261,7 +292,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

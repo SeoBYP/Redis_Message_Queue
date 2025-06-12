@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v8.0": {
       "Producer/1.0.0": {
         "dependencies": {
-          "StackExchange.Redis": "2.8.37"
+          "Redis_Message_Queue": "1.0.0",
+          "StackExchange.Redis": "2.8.41"
         },
         "runtime": {
           "Producer.dll": {}
@@ -33,7 +34,7 @@
           }
         }
       },
-      "StackExchange.Redis/2.8.37": {
+      "StackExchange.Redis/2.8.41": {
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
           "Pipelines.Sockets.Unofficial": "2.2.8"
@@ -41,7 +42,7 @@
         "runtime": {
           "lib/net8.0/StackExchange.Redis.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.8.37.59676"
+            "fileVersion": "2.8.41.44383"
           }
         }
       },
@@ -50,6 +51,17 @@
           "lib/netcoreapp3.0/System.IO.Pipelines.dll": {
             "assemblyVersion": "5.0.0.1",
             "fileVersion": "5.0.120.57516"
+          }
+        }
+      },
+      "Redis_Message_Queue/1.0.0": {
+        "dependencies": {
+          "StackExchange.Redis": "2.8.41"
+        },
+        "runtime": {
+          "Redis_Message_Queue.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       }
@@ -75,12 +87,12 @@
       "path": "pipelines.sockets.unofficial/2.2.8",
       "hashPath": "pipelines.sockets.unofficial.2.2.8.nupkg.sha512"
     },
-    "StackExchange.Redis/2.8.37": {
+    "StackExchange.Redis/2.8.41": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ULscDAQR+z132IsLczXcM/PG+EyfQMNxhvqjG1Xd/h/J1O9prsUU4pG9d95xv77lUF8v3X6owpf/11Uh0uvZAQ==",
-      "path": "stackexchange.redis/2.8.37",
-      "hashPath": "stackexchange.redis.2.8.37.nupkg.sha512"
+      "sha512": "sha512-EgtQzlucry9V2Gces1K19Xi8Sz/8DfoZlGQEmL/hSM/SXO/ucDS5RPmLzcmT489ZNGFbj9CGhlpscPLOXtYWwA==",
+      "path": "stackexchange.redis/2.8.41",
+      "hashPath": "stackexchange.redis.2.8.41.nupkg.sha512"
     },
     "System.IO.Pipelines/5.0.1": {
       "type": "package",
@@ -88,6 +100,11 @@
       "sha512": "sha512-qEePWsaq9LoEEIqhbGe6D5J8c9IqQOUuTzzV6wn1POlfdLkJliZY3OlB0j0f17uMWlqZYjH7txj+2YbyrIA8Yg==",
       "path": "system.io.pipelines/5.0.1",
       "hashPath": "system.io.pipelines.5.0.1.nupkg.sha512"
+    },
+    "Redis_Message_Queue/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
